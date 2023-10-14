@@ -1,0 +1,483 @@
+/*Google Poppins Font CDN Link*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:active,
+:hover,
+:focus {
+    outline: 0 !important;
+    outline-offset: 0;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+/*=== Variable Define===*/
+:root {
+    --primary-color: #A82C48;
+    --secondary-color: #43121d;
+    --third-color: #f98169;
+    --forth-color: #0828c7;
+    --white-color: #fff;
+    --text-color: #555;
+    --text-gray: #999;
+    --black-color: #000;
+    --primary-font: 'Roboto', sans-serif;
+    --secondary-font: 'Quicksand', sans-serif;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--primary-font);
+    font-size: 100%;
+    font-weight: 400;
+
+}
+
+/*=========================================
+Custom Scrollbar
+==========================================*/
+::-webkit-scrollbar {
+    width: 0.825rem;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--white-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #555;
+}
+
+/*=========================================
+Custom CSS Design
+==========================================*/
+h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: var(--secondary-color);
+    line-height: 3rem;
+}
+
+h4 {
+    color: var(--secondary-color);
+    text-transform: capitalize;
+    font-size: 18px;
+    margin-bottom: 0.5rem;
+    font-weight: 800;
+}
+
+h5 {
+    color: var(--primary-color);
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    font-size: 1rem;
+    color: var(--text-color);
+    font-weight: 400;
+    line-height: 1.75rem;
+    letter-spacing: 1px;
+}
+
+.main-btn {
+    display: inline-block;
+    padding: 0.625rem 1.875rem;
+    line-height: 1.5625rem;
+    background-color: var(--primary-color);
+    border: 0.125rem solid var(--primary-color);
+    color: var(--white-color);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px -1px rgb(0 0 0 /19%);
+    -webkit-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+    border-radius: 5px;
+}
+
+
+.white-btn {
+    display: inline-block;
+    border-radius: 5px;
+    padding: 0.625rem 1.875rem;
+    line-height: 1.5625rem;
+    background-color: var(--white-color);
+    border: 0.125rem solid var(--white-color);
+    color: var(--text-color);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px -1px rgb(0 0 0 /19%);
+    -webkit-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+
+}
+
+.main-btn:hover {
+    background-color: var(--white-color);
+    color: var(--primary-color);
+}
+
+.white-btn:hover {
+    background-color: var(--forth-color);
+    color: var(--black-color);
+    border-color: var(--forth-color);
+
+}
+
+.text-content {
+    width: 70%;
+    margin: auto;
+}
+
+.counter-section h2,
+.testimonial-section h2,
+.book-food-text h2 {
+    color: var(--white-color);
+}
+
+
+/*=================================
+    Header Desing
+==================================*/
+
+.navigation-wrap {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 22ms ease-out;
+}
+
+.navigation-wrap .nav-item {
+    padding: 0 0.625rem;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s linear;
+}
+.navbar {
+    background: var(--white-color);
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+.navbar-brand {
+    
+    position: relative;
+    background: url(../images/TX-SERVICE-HAND-LOGO1.png);
+    width: 250px;
+    height: 40px;
+    left: 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+
+.nav-link {
+    font-size: 00.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+    color: rgb(0, 0, 0);
+
+}
+.nav-link.active{
+    color: var(--primary-color) !important;
+    font-weight: 900;
+}
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--primary-color);
+    font-weight: 900;
+}
+
+.navbar-toggler:focus {
+    outline: unset;
+    border: unset;
+    box-shadow: none;
+}
+
+.navigation-wrap .main-btn {
+    padding: 0.3125rem 1.4375rem;
+    box-shadow: none;
+    margin-left: 0.625rem;
+}
+.navbar .navbar-nav .dropdown-mega .dropdown-menu{
+    width: 100%;
+}
+.navbar .navbar-nav .dropdown-mega h5{
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(0,0,0,.125 );
+    margin: 0;
+}
+.navbar .navbar-nav .list-group-item{
+    font-size: 16px;
+    color: black;
+    border: 0;
+    border-bottom: 1px solid rgba(0,0,0,.125 );
+    padding:  12px 0;
+    padding-left: 10px;
+}
+.navbar .navbar-nav .list-group-item:hover{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+
+}
+@media (max-width: 991px){
+    .navbar .navbar-nav .nav-item{
+        margin: 5px 10px;
+    }
+}
+
+/*change navbar scroll*/
+.navigation-wrap .scroll-on {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--white-color);
+    box-shadow: 0 0 0.125rem 1.75rem 0 rgb(0, 0, 0.9);
+    transition: all .15s ease-in-out 0s;
+}
+/*======= Service Booking Details Section ======= */
+.booking{
+    padding: 0 40px 0 40px;
+
+}
+.booking h3{
+    font-weight: 700;
+}
+.booking form label{
+    font-weight: 400;
+}
+.booking form input, .booking form option, .booking form textarea{
+    border: 1px solid black;
+   
+}
+
+.add-btn{
+    background: var(--primary-color);
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    font-weight: 600;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+}
+.add-btn:hover{
+    background: white;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+.booking .booking-info{
+    border-right: 2px solid green;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(108, 108, 108, 0.25);  
+   
+}
+.booking .service-list{
+    box-shadow: 0 4px 8px rgba(108, 108, 108, 0.25);
+    height: 1063px;
+   
+}
+
+.booking .submit-btn button{
+    background: #A82C48;
+    border: 2px solid #A82C48;
+    padding: 5px 30px 5px 30px;
+    font-weight: 700;
+    box-shadow: 0 4px 8px rgba(108, 108, 108, 0.25);
+}
+.booking .submit-btn button:hover{
+    background: white;
+    border: 2px solid #A82C48;
+    color: #A82C48;
+}
+/*===============================
+    Top Banner Design
+================================*/
+.top-banner {
+    width: 100%;
+    height: 150px;
+    background: url("../images/blue-background.jpg") no-repeat center;
+    background-size: cover;;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.top-banner .section-intro {
+    padding: 0;
+    text-align: center;
+}
+
+@media (max-width: 991px){
+    .top-banner{
+        height: 150px;
+        padding-bottom: 1rem;
+    }
+    .top-banner .section-intro h1{
+        font-size: 30px;
+    }
+}
+
+
+/*----------------------------------
+Support Section
+-----------------------------------*/
+#support{
+    background: rgb(233, 233, 233);
+    padding: 20px 0 20px 0;
+}
+/*----------------------------------
+Footer Section
+-----------------------------------*/
+.footer_wrapper {
+    background: url(../images/servicepic/graphic-bg2.jpg);
+    background-repeat: no-repeat;
+    background-position: top-center;
+    background-size: cover;
+    padding-top: 5rem;
+}
+
+.footer_wrapper h5 {
+    color: var(--white-color);
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.footer_wrapper ul li {
+    margin-bottom: 0.5rem;
+    list-style: none;
+}
+
+.footer_wrapper .company_details {
+    font-size: 1rem;
+}
+
+.footer_wrapper a {
+    color: rgb(174, 174, 174);
+}
+
+.footer_wrapper p,
+.footer_wrapper .link-widget li a {
+    color: rgb(174, 174, 174);
+    font-size: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+    -webkit-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+.footer_wrapper .link-widget li a:before {
+    content: '\f105';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0.3rem;
+    top: 50%;
+    -webkit-transform: translate(-50%);
+    transform: translateY(-50%);
+
+}
+
+.footer_wrapper .link-widget li a:hover {
+    margin-left: .625rem;
+    color: #00eaff;
+    font-weight: 600;
+}
+
+.footer_wrapper .social-network a {
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: rgb(255, 255, 255);
+    line-height: 3.2rem;
+    margin: 5px;
+    display: inline-block;
+    border: 0.124rem solid gray;
+    color: gray;
+    text-align: center;
+    border-radius: 100%;
+    -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.335, 1);
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.335, 1);
+}
+
+.footer_wrapper .social-network a:hover {
+    background-color: var(--primary-color);
+    border-color: #00eaff;
+    color: var(--white-color);
+    box-shadow: 0 0.625rem 0 rgb(0 0 0 /10%);
+    transform: translate(-0.1875rem);
+}
+
+.footer_wrapper .form-group .btn {
+    margin-top: 10px;
+}
+
+.footer_wrapper .form-control {
+    color: var(--white-color);
+}
+
+.footer_wrapper .form-control:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: var(--primary-color);
+}
+
+.footer_wrapper .copyright-section {
+    background-color: rgb(6, 2, 53);
+    text-align: center;
+    margin-top: 0.5rem;
+
+}
+
+.footer_wrapper .copyright-section p {
+    margin-top: 0;
+    padding: 1.5rem 0;
+    line-height: 0;
+    margin-bottom: 0;
+    color: var(--white-color);
+}
+
+.footer_wrapper .copyright-section a {
+    color: greenyellow;
+    font-weight: 600;
+
+}
