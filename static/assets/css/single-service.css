@@ -1,0 +1,519 @@
+/*Google Poppins Font CDN Link*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:active,
+:hover,
+:focus {
+    outline: 0 !important;
+    outline-offset: 0;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+/*=== Variable Define===*/
+:root {
+    --primary-color: #A82C48;
+    --secondary-color: #43121d;
+    --third-color: #f98169;
+    --forth-color: #0828c7;
+    --white-color: #fff;
+    --text-color: #555;
+    --text-gray: #999;
+    --black-color: #000;
+    --primary-font: 'Roboto', sans-serif;
+    --secondary-font: 'Quicksand', sans-serif;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--primary-font);
+    font-size: 100%;
+    font-weight: 400;
+
+}
+
+/*=========================================
+Custom Scrollbar
+==========================================*/
+::-webkit-scrollbar {
+    width: 0.825rem;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--white-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #555;
+}
+
+/*=========================================
+Custom CSS Design
+==========================================*/
+h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 2rem;
+    color: var(--secondary-color);
+}
+
+h2 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: var(--secondary-color);
+    line-height: 3rem;
+}
+
+h4 {
+    color: var(--secondary-color);
+    text-transform: capitalize;
+    font-size: 18px;
+    margin-bottom: 0.5rem;
+    font-weight: 800;
+}
+
+h5 {
+    color: var(--primary-color);
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    font-size: 1rem;
+    color: var(--text-color);
+    font-weight: 400;
+    line-height: 1.75rem;
+    letter-spacing: 1px;
+}
+
+.main-btn {
+    display: inline-block;
+    padding: 0.625rem 1.875rem;
+    line-height: 1.5625rem;
+    background-color: var(--primary-color);
+    border: 0.125rem solid var(--primary-color);
+    color: var(--white-color);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px -1px rgb(0 0 0 /19%);
+    -webkit-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+    border-radius: 5px;
+}
+
+.white-btn {
+    display: inline-block;
+    border-radius: 5px;
+    padding: 0.625rem 1.875rem;
+    line-height: 1.5625rem;
+    background-color: var(--white-color);
+    border: 0.125rem solid var(--white-color);
+    color: var(--text-color);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px -1px rgb(0 0 0 /19%);
+    -webkit-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+
+}
+
+.main-btn:hover {
+    background-color: var(--white-color);
+    color: var(--primary-color);
+}
+
+.white-btn:hover {
+    background-color: var(--forth-color);
+    color: var(--black-color);
+    border-color: var(--forth-color);
+
+}
+
+.text-content {
+    width: 70%;
+    margin: auto;
+}
+
+.counter-section h2,
+.testimonial-section h2,
+.book-food-text h2 {
+    color: var(--white-color);
+}
+
+/*=================================
+    Header Desing
+==================================*/
+
+.navbar {
+    background: var(--white-color);
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 25px;
+    color: #092032;
+    position: relative;
+    background: url(../static/assets/images/TX-SERVICE-HAND-LOGO1.png);
+    width: 250px;
+    height: 40px;
+    left: 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: rgb(0, 0, 0);
+}
+
+
+.navigation-wrap {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 22ms ease-out;
+}
+
+.navigation-wrap .nav-item {
+    padding: 0 0.625rem;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s linear;
+}
+
+.navbar-toggler:focus {
+    outline: unset;
+    border: unset;
+    box-shadow: none;
+}
+
+.nav-link {
+    font-size: 00.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+
+}
+.nav-link.active{
+    color: var(--primary-color) !important;
+}
+.navigation-wrap .main-btn {
+    padding: 0.3125rem 1.4375rem;
+    box-shadow: none;
+    margin-left: 0.625rem;
+}
+
+/*change navbar scroll*/
+.navigation-wrap.scroll-on {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--white-color);
+    box-shadow: 0 0 0.125rem 1.75rem 0 rgb(0, 0, 0.9);
+    transition: all .15s ease-in-out 0s;
+}
+.navigation-wrap.scroll-on .nav-link{
+    color: #000;
+}
+.navbar .navbar-nav .nav-link:hover,
+.navigation-wrap.scroll-on .nav-link.active{
+    color: var(--primary-color);
+}
+
+/*----------------------------------------
+Overview Section
+----------------------------------------*/
+.overview {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.overview .container .row h3,h4,h5{
+    font-weight: 900;
+    padding-bottom: 1rem;
+    color: #000;
+}
+
+.overview .container .row p{
+    line-height: 1rem;
+    color: rgb(58, 58, 58);
+}
+.overview .container .row ul{
+    padding-left: 2rem;
+    list-style-type: square;
+}
+.overview .container .row ul li p{
+    line-height: normal;
+}
+/*----------------------------------------
+Landing Service Section
+----------------------------------------*/
+.landing_service_section{
+    background-color: var(--white-color);
+
+}
+.landing_service_section .section-intro .divider{
+    height: 5px;
+    width: 150px;
+    margin: 15px auto;
+    background: linear-gradient(to right, red, green);
+}
+.landing_service_section .section-intro h2{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.landing_service_section .section-header {
+    text-align: Left;
+    padding-bottom: 20px;
+    padding-top: 5px;
+}
+
+.landing_service_section .section-header p {
+    margin: 5px 0 0 0;
+    padding: 0;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+.landing_service_section .section-header .d-flex .view-all{
+    font-size: medium;
+    color: var(--primary-color);
+    margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+    .landing_service_section .section-header p {
+        font-size: 25px;
+        line-height: 32px;
+    }
+}
+.landing_service_section .service-card{
+    position: relative;
+    overflow: hidden;
+    width: fit-content;
+    border: none;
+    transition: all 0.3s;
+    box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.095);
+    border-radius: 10px;
+}
+.landing_service_section .service-card:hover{
+    transform: scale(1.1);
+}
+.landing_service_section .row {
+    text-align: left;
+   
+}
+
+.landing_service_section .row  .card-footer{
+    background-color: rgb(255, 255, 255);
+    color: var(--primary-color);
+}
+.landing_service_section .row  .card-footer:hover{
+    background-color: var(--primary-color);
+    
+}
+
+
+.landing_service_section .service-card h3{
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 2px;
+    color: var(--primary-color);
+}
+.landing_service_section .service-card span{
+    color: black;
+    font-size: 12px;
+}
+.landing_service_section .row  .card-footer:hover h3 {
+    color: var(--white-color);
+    font-weight: 900;
+}
+.landing_service_section .row  .card-footer:hover span{
+    color: var(--white-color);
+}
+/*----------------------------------
+FAQ Section
+-----------------------------------*/
+.faq{
+    background: rgb(255, 255, 255);
+    padding: 20px 0 20px 0;
+}
+.faq .row .star{
+    background: url(../static/assets/images/servicepic/star.png) no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+.faq .row h4{
+    font-size: 20px;
+    color: black;
+}
+.faq .row p{
+    font-size: 18px;
+    color: black;
+}
+.faq .section-intro .divider{
+    height: 5px;
+    width: 150px;
+    margin: 15px auto;
+    background: linear-gradient(to right, red, green);
+}
+/*----------------------------------
+Support Section
+-----------------------------------*/
+#support{
+    background: rgb(242, 242, 242);
+    padding: 20px 0 20px 0;
+}
+/*----------------------------------
+Footer Section
+-----------------------------------*/
+.footer_wrapper {
+    background: url(../static/assets/static/assets/images/servicepic/graphic-bg2.jpg);
+    background-repeat: no-repeat;
+    background-position: top-center;
+    background-size: cover;
+    padding-top: 5rem;
+}
+
+.footer_wrapper h5 {
+    color: var(--white-color);
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.footer_wrapper ul li {
+    margin-bottom: 0.5rem;
+    list-style: none;
+}
+
+.footer_wrapper .company_details {
+    font-size: 1rem;
+}
+
+.footer_wrapper a {
+    color: rgb(174, 174, 174);
+}
+
+.footer_wrapper p,
+.footer_wrapper .link-widget li a {
+    color: rgb(174, 174, 174);
+    font-size: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+    -webkit-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+.footer_wrapper .link-widget li a:before {
+    content: '\f105';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0.3rem;
+    top: 50%;
+    -webkit-transform: translate(-50%);
+    transform: translateY(-50%);
+
+}
+
+.footer_wrapper .link-widget li a:hover {
+    margin-left: .625rem;
+    color: #00eaff;
+    font-weight: 600;
+}
+
+.footer_wrapper .social-network a {
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: rgb(255, 255, 255);
+    line-height: 3.2rem;
+    margin: 5px;
+    display: inline-block;
+    border: 0.124rem solid gray;
+    color: gray;
+    text-align: center;
+    border-radius: 100%;
+    -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.335, 1);
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.335, 1);
+}
+
+.footer_wrapper .social-network a:hover {
+    background-color: var(--primary-color);
+    border-color: #00eaff;
+    color: var(--white-color);
+    box-shadow: 0 0.625rem 0 rgb(0 0 0 /10%);
+    transform: translate(-0.1875rem);
+}
+
+.footer_wrapper .form-group .btn {
+    margin-top: 10px;
+}
+
+.footer_wrapper .form-control {
+    color: var(--white-color);
+}
+
+.footer_wrapper .form-control:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: var(--primary-color);
+}
+
+.footer_wrapper .copyright-section {
+    background-color: rgb(6, 2, 53);
+    text-align: center;
+    margin-top: 0.5rem;
+
+}
+
+.footer_wrapper .copyright-section p {
+    margin-top: 0;
+    padding: .8rem 0;
+    line-height: 0;
+    margin-bottom: 0;
+    color: var(--white-color);
+}
+
+.footer_wrapper .copyright-section a {
+    color: greenyellow;
+    font-weight: 600;
+
+}
